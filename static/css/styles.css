@@ -42,7 +42,7 @@ body {
     position: fixed;
     top: 50px;
     width: 65%;
-    right: 180px;
+    right: 190px;
     z-index: 800; 
 }
 .h2-formAluno{
@@ -90,62 +90,42 @@ body {
     color: #555;
 }
 
-.btn {
-    width: 34%;
-    padding: 10px;
-    font-size: 18px;
-    background-color: #0E206A;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-      margin-left: 275px; 
-      margin-top: 35px; 
-}
-
 .btn:hover {
-    background-color: #5c74d6;
-}
-.menu {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 300px;
-    height: 100%;
-    background: linear-gradient(to bottom, #131F73 50%, #050E32 50%);
-    padding-top: 65px;
+    background-color: #4d6ff7;
 }
 
-.menu ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    margin-left: 20px;
-    
-
-}
-
-.menu ul li {
-    padding: 0px;
-    display: inline-block; 
-    margin-bottom: -60px;
-    
-     margin-top: 60px;
-}
-
-.menu ul li a {
-    text-decoration: none;
-    color: #fff;
-}
-
-.menu ul li a:hover {
-    color: #D60A0B; 
-}
 .selecionado{
     background: black;
     color:white;
 }
+.left-menu {
+    background: linear-gradient(to bottom, #616fd8 50%, #050E32 50%);
+    height: 110vh;
+
+  }
+  .left-menu .nav-link {
+    color: white;
+    transition: color 0.1s;
+  }
+  .left-menu .nav-link:hover {
+    color: rgb(0, 0, 0); 
+  }
+
+  .left-menu-logo {
+    text-align: left;
+    background-image: url('/static/img/Prancheta1.png'); 
+    background-size: 230px; /* Definindo largura e altura manualmente */
+    background-repeat: no-repeat;
+
+    width: 270px;
+    height: 120px; 
+    background-position: left center;
+
+}
+
+
+
+
 
 
 
@@ -156,9 +136,22 @@ body {
     transform: translateX(-50%);
 }
 
-.button-container {
-    text-align: center; /* Centraliza os botões */
-    margin-top: -150px;
+.btn-custom {
+  
+    background-color: #f0f0f0;
+    color: #333;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.1s;
+}
+
+.btn-custom:hover,
+.btn-custom:focus,
+.btn-custom:active {
+    background-color: #050E32; /* Cor de fundo quando hover, foco ou ativo */
+    color: #EEEEF6; /* Cor do texto quando hover, foco ou ativo */
+    /* Adicione outros estilos conforme necessário */
 }
 
 .button-container button {
@@ -173,10 +166,6 @@ body {
     transition: background-color 0.3s;
 }
 
-.button-container button.selecionado {
-    background-color: #050E32;
-    color: #fff;
-}
 .h2-notaFrequencia{
     font-family: 'Poppins', sans-serif; 
     font-weight: 750; 
@@ -239,7 +228,27 @@ td {
 
 /* Estilo para as linhas alternadas da tabela */
 tbody tr:nth-child(even) {
-    background-color: #f2f2f2;
+    background-color: #ffffff;
+}
+.vertical-align-middle {
+    display: flex;
+    align-items: center;
+}
+.caixa-btn {
+   
+    border: 1px solid rgb(0, 0, 0)a1a;
+}
+/* Alinhamento à esquerda */
+.text-left {
+    text-align: left !important;
+}
+
+/* Alinhamento à direita */
+.text-right {
+    text-align: right !important;
+}
+.text-center {
+    text-align: center !important;
 }
 
 
